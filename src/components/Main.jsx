@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/NewMain.css'
 
 
-function NewMain({ children }) {
+function Main({ children }) {
   return (
     <main>
       {children}
@@ -10,4 +10,4 @@ function NewMain({ children }) {
   );
 }
 
-export default NewMain;
+export default Main;

@@ -1,14 +1,14 @@
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import NewMain from './components/NewMain';
+import Main from './components/Main';
 import Section from './components/Section';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <NewMain>
+      <Main>
       <Section
           title="Sección 1"
           content="Contenido de la primera sección."
@@ -33,7 +33,7 @@ function App() {
           imagePosition="right"
           textPosition="left"
         />
-      </NewMain>
+      </Main>
         
       <Footer />
     </div>
