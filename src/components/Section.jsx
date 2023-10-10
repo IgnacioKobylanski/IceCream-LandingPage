@@ -1,26 +1,14 @@
 import React from 'react';
+import '../styles/Section.css'
 
-function Section({ title, content, backgroundColor, imageSrc, imagePosition, textPosition }) {
-  const sectionStyle = {
-    backgroundColor: backgroundColor,
-  };
-
-  const contentContainerStyle = {
-    display: 'flex',
-    flexDirection: textPosition === 'left' ? 'row' : 'row-reverse',
-    alignItems: 'center',
-  };
-
+function Section({ title, content, imageSrc, className }) {
   return (
-    <section style={sectionStyle}>
-      <div style={contentContainerStyle}>
-        <div>
-          <h2>{title}</h2>
-          <p>{content}</p>
-        </div>
-        {imagePosition === 'right' && <img src={imageSrc} alt="Imagen" />}
+    <section className={className}>
+      <div className='div-text'>
+        <h2>{title}</h2>
+        <p>{content}</p>
       </div>
-      {imagePosition === 'left' && <img src={imageSrc} alt="Imagen" />}
+      <img src={imageSrc} alt="Imagen" />
     </section>
   );
 }
