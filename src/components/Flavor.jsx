@@ -4,7 +4,7 @@ function Flavor() {
     return (
         <div className="flavors-main">
             <section className="flavors-sections">
-                <h2 className="flavors-title"></h2>
+                <h2 className="flavors-title">Try our card!</h2>
             </section>
         </div>
     );
