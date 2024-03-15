@@ -8,6 +8,7 @@ function Flavor() {
                 <img src="" alt="" className="flavorImg" />
                 <p className="description"></p>
                 <div className="vegan-flavors"></div>
+                <div className="poll"></div>
             </section>
         </div>
     );
